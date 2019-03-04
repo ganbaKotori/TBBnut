@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\PlayerMotor.cs" />
+    <Compile Include="Assets\PlayerShoot.cs" />
+    <Compile Include="Assets\PlayerWeapon.cs" />
     <None Include="Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Alex/Documents/TBBnut/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
