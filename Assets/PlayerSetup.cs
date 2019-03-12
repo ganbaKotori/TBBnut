@@ -1,39 +1,26 @@
-﻿
-using UnityEngine;
-using UnityEngine.Networking;
+﻿//-------------------------------------
+// Responsible for setting up the player.
 
-public class PlayerSetup : NetworkBehaviour
+using UnityEngine;
+
+
+[RequireComponent(typeof(Player))]
+public class PlayerSetup : MonoBehaviour
 {
-    [SerializeField]
-    Behaviour[] componentsToDisable;
-    [SerializeField]
-    Camera sceneCamera;
+
 
     void Start()
     {
-        if (!isLocalPlayer)
-        {
-            for (int i = 0; i < componentsToDisable.Length; i++)
-            {
-                componentsToDisable[i].enabled = false;
-            }
-        } else
-        {
-            sceneCamera = Camera.main;
-            if(sceneCamera != null)
-            {
-                sceneCamera.gameObject.SetActive(false);
-            }
-    
-            Camera.main.gameObject.SetActive(false);
-        }
+
+
+        GetComponent<Player>().Setup();
     }
 
+
+    // When we are destroyed
     void OnDisable()
     {
-        if (sceneCamera != null)
-        {
-            sceneCamera.gameObject.SetActive(true);
-        }
+       
     }
+
 }

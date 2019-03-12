@@ -316,8 +316,7 @@ GameObject:
   - component: {fileID: 5776981104990063967}
   - component: {fileID: 7832032445626088276}
   - component: {fileID: 1003046391}
-  - component: {fileID: 564731179594862146}
-  - component: {fileID: 6233166820077607439}
+  - component: {fileID: 1727661070}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -531,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5776981104990063973}
---- !u!114 &564731179594862146
+--- !u!114 &1727661070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,49 +539,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5776981104990063973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: a15cabdeed130dd4b89dc83834b45da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
---- !u!114 &6233166820077607439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5776981104990063973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f694bd95b7a290b408b37f5a57ab5c32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentsToDisable:
-  - {fileID: 5776981104990063972}
-  - {fileID: 5776981104990063971}
-  - {fileID: 5776981105489352844}
-  - {fileID: 5776981105489352845}
-  - {fileID: 1840299057}
-  sceneCamera: {fileID: 0}
+  maxHealth: 100
+  player: {fileID: 5776981104990063968}
+  respawnPoint: {fileID: 0}
 --- !u!1 &5776981105307341749
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +590,7 @@ GameObject:
   - component: {fileID: 5776981105489352845}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
