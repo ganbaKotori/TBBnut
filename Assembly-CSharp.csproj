@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Controllers\EnemyController.cs" />
-    <Compile Include="Assets\Controllers\PlayerController.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -103,13 +102,14 @@
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\Player1.cs" />
-    <Compile Include="Assets\PlayerManager.cs" />
-    <Compile Include="Assets\PlayerMotor.cs" />
-    <Compile Include="Assets\PlayerSetup.cs" />
-    <Compile Include="Assets\PlayerShoot.cs" />
-    <Compile Include="Assets\PlayerWeapon.cs" />
+    <Compile Include="Assets\PlayerScripts\Player.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerLook.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerManager.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerMove.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerSetup.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerShoot.cs" />
+    <Compile Include="Assets\PlayerScripts\PlayerWeapon.cs" />
+    <Compile Include="Assets\PlayerScripts\UsingInstantiate.cs" />
     <Compile Include="Assets\Respawn.cs" />
     <None Include="Assets\Environment\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
