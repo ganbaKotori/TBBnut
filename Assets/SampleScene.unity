@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,62 +183,6 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 171598845}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].time
-      value: 0.21174002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].value
-      value: 0.7621973
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].inSlope
-      value: -0.106268585
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].outSlope
-      value: -0.106268585
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].inWeight
-      value: 0.12843668
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[1].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].time
-      value: 0.37932104
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].value
-      value: 0.39708352
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].inSlope
-      value: -1.5445393
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].outSlope
-      value: -1.5445393
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[2].outWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295194275, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
-      propertyPath: jumpFallOff.m_Curve.Array.data[0].value
-      value: 1.1623993
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
 --- !u!1 &170076733
@@ -633,6 +577,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 64, y: 1.0000104, z: 64}
   m_Center: {x: 0, y: -0.5000052, z: 0}
+--- !u!114 &312046957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312046953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30c742cf08c37d43a529701f38fa6d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fpsCam: {fileID: 0}
 --- !u!1 &697383979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3f79402ff4ca9c54d96a09d1a77540d5,
