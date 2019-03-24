@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,6 +183,51 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 171598845}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.302656
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9167601
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352846, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.940836
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352844, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352844, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776981105489352844, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa,
+        type: 3}
+      propertyPath: field of view
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dbad1a9f3f28ea41bb2ccd63afc7cfa, type: 3}
 --- !u!1 &170076733
@@ -584,7 +629,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312046953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e30c742cf08c37d43a529701f38fa6d1, type: 3}
   m_Name: 
