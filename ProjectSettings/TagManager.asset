@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Ground
+  - Wall
+  - Climbable
+  - Enemy
+  - Climb Zone
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -15,12 +21,12 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Giraffe
+  - Climbable
+  - Floor
+  - Platform
+  - Projectile
   - 
   - 
   - 
