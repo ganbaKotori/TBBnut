@@ -12,6 +12,13 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public bool canClimb;
     public bool isGrounded;
+
+    //private bool isJumping;
+    public float maxJumpVelocity;
+    public AnimationCurve jumpVelocity;
+    private float jumpTimer;
+    private float yVelocity;
+
     public PlayerPhysics pp;
 
     private CharacterController charController;
@@ -22,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         charController = GetComponent<CharacterController>();
         //rb = GetComponent<Rigidbody>();
         pp = GetComponent<PlayerPhysics>();
+
     }
 
     // Update is called once per frame
@@ -37,6 +45,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetState()
     {
+        if(isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            currentState = State.airborne;
+            jumpTimer = 0;
+            return;
+        }
         if (Input.GetKey(KeyCode.LeftShift) && canClimb)
         {
             currentState = State.climbing;
@@ -69,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
                 if (pp.velocity.magnitude != 0)
                     if (pp.velocity.magnitude >= minimumSpeed)
                         pp.velocity = new Vector3(0, 0);
-                    else pp.velocity = new Vector3(0.5f * pp.velocity.x, 0.5f * pp.velocity.y, 0.5f * pp.velocity.z);
+                    else pp.velocity = new Vector3(0.8f * pp.velocity.x, 0.8f * pp.velocity.y, 0.8f * pp.velocity.z);
                         break;
             case State.moving:
                 pp.velocity = pp.playerInputs * moveSpeed;
@@ -79,12 +93,28 @@ public class PlayerMovement : MonoBehaviour
                 pp.velocity = pp.playerInputs * moveSpeed * 0.5f;
                 charController.Move(pp.velocity * Time.deltaTime);
                 break;
-            //case State.airborne:
-                //pp.velocity += moveSpeed * 0.5f;
-                //charController.Move(pp.velocity * Time.deltaTime);
-                //break;
+            case State.airborne:
+                //pp.velocity = pp.velocity + new Vector3(0, 5, 0);
+                //Debug.Log("Y: " + pp.velocity.y);
+                float newTime = jumpTimer + Time.deltaTime;
+                if(Input.GetKey(KeyCode.Space))
+                {
+                    yVelocity = (jumpVelocity.Evaluate(jumpTimer) + jumpVelocity.Evaluate(newTime)) / 2;
+                    Debug.Log("Timer: " + jumpTimer + "    Velovity: " + yVelocity);
+                }
+
+                pp.velocity = pp.playerInputs * moveSpeed + new Vector3(0, yVelocity, 0); // * 0.5f;
+                charController.Move(pp.velocity * Time.deltaTime);
+                break;
         }
     }
+
+    private void StartJump()
+    {
+        
+    }
+
+
 }
 
 
