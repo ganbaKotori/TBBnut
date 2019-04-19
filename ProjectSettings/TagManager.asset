@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Climb Zone
   - Floor
+  - Acorn
   layers:
   - Default
   - TransparentFX

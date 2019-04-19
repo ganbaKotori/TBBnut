@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public AnimationCurve jumpVelocity;
     private float jumpTimer;
     private float yVelocity;
+    private Vector3 normalForce;
 
     //A simple class that keeps track of play inputs and direction
     public PlayerPhysics pp;
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             jumpTimer = 0;
             return;
         }
-        if (Input.GetKey(KeyCode.LeftShift) && canClimb)
+        else if (Input.GetKey(KeyCode.LeftShift) && canClimb && !Input.GetKey(KeyCode.Space))
         {
             currentState = State.climbing;
             //isGrounded = true;
@@ -94,17 +95,21 @@ public class PlayerMovement : MonoBehaviour
                //If the player has no movement keys down and is on the ground, it will stop
             case State.idle:
                 pp.velocity = new Vector3(0, 0);
+                if (Input.GetMouseButton(0))
+                    Shoot(- fpsCam.transform.forward * 0.35f * shootSpeed);
                 break;
 
                 //Moves the player with the given inputs
             case State.moving:
-                pp.velocity = pp.playerInputs * moveSpeed;
+                pp.velocity = pp.playerInputs * moveSpeed * encumbrance.Evaluate(acornCount);
                 charController.Move(pp.velocity * Time.deltaTime);
+                if (Input.GetMouseButton(0))
+                    Shoot(pp.velocity * 0.5f - fpsCam.transform.forward * 0.45f * shootSpeed);
                 break;
 
                 //Slows the player and lets them shoot
             case State.aiming:
-                pp.velocity = pp.playerInputs * moveSpeed * 0.3f;
+                pp.velocity = pp.playerInputs * moveSpeed * 0.3f * encumbrance.Evaluate(acornCount);
                 charController.Move(pp.velocity * Time.deltaTime);
                 if (Input.GetMouseButton(0))
                     Shoot();
@@ -120,18 +125,23 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (jumpTimer <= maxJumpTime)
                     {
-                        yVelocity = (jumpVelocity.Evaluate(jumpTimer) + jumpVelocity.Evaluate(newTime)) / 2;
+                        yVelocity = (jumpVelocity.Evaluate(jumpTimer) + jumpVelocity.Evaluate(newTime)) / 2 * encumbrance.Evaluate(acornCount);
                         Debug.Log("Timer: " + jumpTimer + "    Velovity: " + yVelocity);
                         //terminalVelocity = yVelocity;
                     }
+                    if (jumpTimer == 0)
+                        yVelocity *= 3.5f;
                     else terminalVelocity = -4f;
                     //else yVelocity -= 3.2f * Time.deltaTime;
                 }
                 //else
                     yVelocity = Mathf.Max(yVelocity - 9.6f * Time.deltaTime, terminalVelocity);
 
-                pp.velocity = pp.playerInputs * moveSpeed + new Vector3(0, yVelocity, 0); // * 0.5f;
+                pp.velocity = pp.playerInputs * moveSpeed * encumbrance.Evaluate(acornCount) + new Vector3(0, yVelocity, 0); // * 0.5f;
+                //pp.velocity.x += (1f - normalForce.y) * normalForce.x * 10;
+                //pp.velocity.z += (1f - normalForce.y) * normalForce.z * 10;
                 charController.Move(pp.velocity * Time.deltaTime);
+                Debug.Log("I'm falling!    downwards velocity: " + pp.velocity);
                 jumpTimer = newTime;
 
                 if (Input.GetMouseButton(0))
@@ -140,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
 
             case State.climbing:
                 pp.velocity = (pp.playerInputs * moveSpeed) + new Vector3(0, pp.playerInputs.magnitude * moveSpeed, 0);
-                pp.velocity.Scale(new Vector3(0.3f, 0.5757f, 0.3f));
+                pp.velocity.Scale(new Vector3(0.3f, 0.5757f, 0.3f) * encumbrance.Evaluate(acornCount));
                 charController.Move(pp.velocity * Time.deltaTime);
                 yVelocity = 0;
                 break;
@@ -164,9 +174,11 @@ public class PlayerMovement : MonoBehaviour
             temp.GetComponent<Rigidbody>().velocity = addedVelocity + fpsCam.transform.forward * shootSpeed;
             lastShot = Time.time;
         }
-
     }
-
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        normalForce = hit.normal;
+    }
 
 
     private void StartJump()
