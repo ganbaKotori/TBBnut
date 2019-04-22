@@ -459,6 +459,8 @@ MonoBehaviour:
   horizontalInputName: Horizontal
   verticalInputName: Vertical
   movementSpeed: 9
+  totalAirTime: 2
+  gravity: -9
   jumpFallOff:
     serializedVersion: 2
     m_Curve:
@@ -494,6 +496,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   jumpMultiplier: 13
   jumpKey: 32
+  isJumping: 0
 --- !u!1 &5776981105307341749
 GameObject:
   m_ObjectHideFlags: 0
