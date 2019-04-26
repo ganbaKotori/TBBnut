@@ -12,6 +12,7 @@ TagManager:
   - Climb Zone
   - Floor
   - Acorn
+  - FloorCheck
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Platform
   - Projectile
   - ClimbZone
-  - 
+  - FloorCheck
   - 
   - 
   - 

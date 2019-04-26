@@ -48,13 +48,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //SphereCollider collider = GetComponentInChildren<SphereCollider>();
+        //isGrounded = Physics.CheckCapsule()
         SetState();
         Move();
+    }
 
-
+    private void FixedUpdate()
+    {
+        isGrounded = Physics.CheckSphere(transform.position - new Vector3(0, 1.2f, 0), 0.15f, LayerMask.GetMask("Floor"));
 
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //if (collision.gameObject.layer == (int)GameLayers.Floor)
+    }
 
     public void SetState()
     {

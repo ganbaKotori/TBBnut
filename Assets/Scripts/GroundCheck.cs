@@ -9,13 +9,13 @@ public class GroundCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Floor"))
-            GetComponentInParent<PlayerMovement>().isGrounded = true;
+        if (other.CompareTag("Floor")) ;
+            //GetComponentInParent<PlayerMovement>().isGrounded = true;
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Floor"))
-            GetComponentInParent<PlayerMovement>().isGrounded = false;
+        if (other.CompareTag("Floor")) ;
+            //GetComponentInParent<PlayerMovement>().isGrounded = false;
     }
 
 

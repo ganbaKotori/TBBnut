@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/CornerMarket.unity
+- path: Assets/Anthony.unity
   isLoaded: 1
   isActive: 1
