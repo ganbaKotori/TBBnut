@@ -1,0 +1,965 @@
+fileFormatVersion: 2
+guid: 7219f8786c175054d9f40b1591cdbba6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: block_default_0
+    100002: block_default_0 1
+    100004: block_default_10
+    100006: block_default_10 1
+    100008: block_default_11
+    100010: block_default_11 1
+    100012: block_default_11 2
+    100014: block_default_12
+    100016: block_default_12 1
+    100018: block_default_12 2
+    100020: block_default_13
+    100022: block_default_13 1
+    100024: block_default_14
+    100026: block_default_14 1
+    100028: block_default_15
+    100030: block_default_15 1
+    100032: block_default_16
+    100034: block_default_16 1
+    100036: block_default_16 2
+    100038: block_default_17
+    100040: block_default_17 1
+    100042: block_default_17 2
+    100044: block_default_18
+    100046: block_default_19
+    100048: block_default_19 1
+    100050: block_default_2
+    100052: block_default_2 1
+    100054: block_default_20
+    100056: block_default_20 1
+    100058: block_default_21
+    100060: block_default_21 1
+    100062: block_default_22
+    100064: block_default_22 1
+    100066: block_default_23
+    100068: block_default_23 1
+    100070: block_default_23 2
+    100072: block_default_24
+    100074: block_default_24 1
+    100076: block_default_25
+    100078: block_default_25 1
+    100080: block_default_26
+    100082: block_default_26 1
+    100084: block_default_27
+    100086: block_default_27 1
+    100088: block_default_28
+    100090: block_default_29
+    100092: block_default_3
+    100094: block_default_3 1
+    100096: block_default_30
+    100098: block_default_32
+    100100: block_default_33
+    100102: block_default_33 1
+    100104: block_default_34
+    100106: block_default_34 1
+    100108: block_default_35
+    100110: block_default_35 1
+    100112: block_default_35 2
+    100114: block_default_36
+    100116: block_default_36 1
+    100118: block_default_37
+    100120: block_default_38
+    100122: block_default_39
+    100124: block_default_4
+    100126: block_default_4 1
+    100128: block_default_40
+    100130: block_default_41
+    100132: block_default_42
+    100134: block_default_43
+    100136: block_default_44
+    100138: block_default_45
+    100140: block_default_46
+    100142: block_default_48
+    100144: block_default_49
+    100146: block_default_5
+    100148: block_default_5 1
+    100150: block_default_5 2
+    100152: block_default_5 3
+    100154: block_default_50
+    100156: block_default_51
+    100158: block_default_52
+    100160: block_default_53
+    100162: block_default_55
+    100164: block_default_56
+    100166: block_default_57
+    100168: block_default_59
+    100170: block_default_6
+    100172: block_default_6 1
+    100174: block_default_6 2
+    100176: block_default_60
+    100178: block_default_61
+    100180: block_default_62
+    100182: block_default_63
+    100184: block_default_64
+    100186: block_default_66
+    100188: block_default_67
+    100190: block_default_68
+    100192: block_default_69
+    100194: block_default_7
+    100196: block_default_7 1
+    100198: block_default_70
+    100200: block_default_71
+    100202: block_default_72
+    100204: block_default_8
+    100206: block_default_8 1
+    100208: block_default_8 2
+    100210: block_default_9
+    100212: block_default_9 1
+    100214: block_rounded_29
+    100216: block_rounded_30
+    100218: block_rounded_31
+    100220: //RootNode
+    100222: cylinder_full_10
+    100224: cylinder_full_13
+    100226: cylinder_full_14
+    100228: cylinder_full_15
+    100230: cylinder_full_16
+    100232: cylinder_full_18
+    100234: cylinder_full_19
+    100236: cylinder_full_21
+    100238: cylinder_full_38
+    100240: cylinder_full_39
+    100242: cylinder_full_6
+    100244: cylinder_full_7
+    100246: door_gate_0
+    100248: door_gate_1
+    100250: door_gate_1 1
+    100252: door_gate_11
+    100254: door_gate_18
+    100256: door_gate_2
+    100258: door_gate_2 1
+    100260: door_gate_24
+    100262: door_gate_25
+    100264: door_gate_26
+    100266: door_gate_27
+    100268: door_gate_28
+    100270: door_gate_29
+    100272: door_gate_3
+    100274: door_gate_3 1
+    100276: door_gate_30
+    100278: door_gate_31
+    100280: door_gate_32
+    100282: door_gate_4
+    100284: door_gate_4 1
+    100286: door_gate_7
+    100288: door_gate_8
+    100290: door_gate_9
+    400000: block_default_0
+    400002: block_default_0 1
+    400004: block_default_10
+    400006: block_default_10 1
+    400008: block_default_11
+    400010: block_default_11 1
+    400012: block_default_11 2
+    400014: block_default_12
+    400016: block_default_12 1
+    400018: block_default_12 2
+    400020: block_default_13
+    400022: block_default_13 1
+    400024: block_default_14
+    400026: block_default_14 1
+    400028: block_default_15
+    400030: block_default_15 1
+    400032: block_default_16
+    400034: block_default_16 1
+    400036: block_default_16 2
+    400038: block_default_17
+    400040: block_default_17 1
+    400042: block_default_17 2
+    400044: block_default_18
+    400046: block_default_19
+    400048: block_default_19 1
+    400050: block_default_2
+    400052: block_default_2 1
+    400054: block_default_20
+    400056: block_default_20 1
+    400058: block_default_21
+    400060: block_default_21 1
+    400062: block_default_22
+    400064: block_default_22 1
+    400066: block_default_23
+    400068: block_default_23 1
+    400070: block_default_23 2
+    400072: block_default_24
+    400074: block_default_24 1
+    400076: block_default_25
+    400078: block_default_25 1
+    400080: block_default_26
+    400082: block_default_26 1
+    400084: block_default_27
+    400086: block_default_27 1
+    400088: block_default_28
+    400090: block_default_29
+    400092: block_default_3
+    400094: block_default_3 1
+    400096: block_default_30
+    400098: block_default_32
+    400100: block_default_33
+    400102: block_default_33 1
+    400104: block_default_34
+    400106: block_default_34 1
+    400108: block_default_35
+    400110: block_default_35 1
+    400112: block_default_35 2
+    400114: block_default_36
+    400116: block_default_36 1
+    400118: block_default_37
+    400120: block_default_38
+    400122: block_default_39
+    400124: block_default_4
+    400126: block_default_4 1
+    400128: block_default_40
+    400130: block_default_41
+    400132: block_default_42
+    400134: block_default_43
+    400136: block_default_44
+    400138: block_default_45
+    400140: block_default_46
+    400142: block_default_48
+    400144: block_default_49
+    400146: block_default_5
+    400148: block_default_5 1
+    400150: block_default_5 2
+    400152: block_default_5 3
+    400154: block_default_50
+    400156: block_default_51
+    400158: block_default_52
+    400160: block_default_53
+    400162: block_default_55
+    400164: block_default_56
+    400166: block_default_57
+    400168: block_default_59
+    400170: block_default_6
+    400172: block_default_6 1
+    400174: block_default_6 2
+    400176: block_default_60
+    400178: block_default_61
+    400180: block_default_62
+    400182: block_default_63
+    400184: block_default_64
+    400186: block_default_66
+    400188: block_default_67
+    400190: block_default_68
+    400192: block_default_69
+    400194: block_default_7
+    400196: block_default_7 1
+    400198: block_default_70
+    400200: block_default_71
+    400202: block_default_72
+    400204: block_default_8
+    400206: block_default_8 1
+    400208: block_default_8 2
+    400210: block_default_9
+    400212: block_default_9 1
+    400214: block_rounded_29
+    400216: block_rounded_30
+    400218: block_rounded_31
+    400220: //RootNode
+    400222: cylinder_full_10
+    400224: cylinder_full_13
+    400226: cylinder_full_14
+    400228: cylinder_full_15
+    400230: cylinder_full_16
+    400232: cylinder_full_18
+    400234: cylinder_full_19
+    400236: cylinder_full_21
+    400238: cylinder_full_38
+    400240: cylinder_full_39
+    400242: cylinder_full_6
+    400244: cylinder_full_7
+    400246: door_gate_0
+    400248: door_gate_1
+    400250: door_gate_1 1
+    400252: door_gate_11
+    400254: door_gate_18
+    400256: door_gate_2
+    400258: door_gate_2 1
+    400260: door_gate_24
+    400262: door_gate_25
+    400264: door_gate_26
+    400266: door_gate_27
+    400268: door_gate_28
+    400270: door_gate_29
+    400272: door_gate_3
+    400274: door_gate_3 1
+    400276: door_gate_30
+    400278: door_gate_31
+    400280: door_gate_32
+    400282: door_gate_4
+    400284: door_gate_4 1
+    400286: door_gate_7
+    400288: door_gate_8
+    400290: door_gate_9
+    2100000: _defaultMat
+    2100002: wood
+    2300000: block_default_0
+    2300002: block_default_0 1
+    2300004: block_default_10
+    2300006: block_default_10 1
+    2300008: block_default_11
+    2300010: block_default_11 1
+    2300012: block_default_11 2
+    2300014: block_default_12
+    2300016: block_default_12 1
+    2300018: block_default_12 2
+    2300020: block_default_13
+    2300022: block_default_13 1
+    2300024: block_default_14
+    2300026: block_default_14 1
+    2300028: block_default_15
+    2300030: block_default_15 1
+    2300032: block_default_16
+    2300034: block_default_16 1
+    2300036: block_default_16 2
+    2300038: block_default_17
+    2300040: block_default_17 1
+    2300042: block_default_17 2
+    2300044: block_default_18
+    2300046: block_default_19
+    2300048: block_default_19 1
+    2300050: block_default_2
+    2300052: block_default_2 1
+    2300054: block_default_20
+    2300056: block_default_20 1
+    2300058: block_default_21
+    2300060: block_default_21 1
+    2300062: block_default_22
+    2300064: block_default_22 1
+    2300066: block_default_23
+    2300068: block_default_23 1
+    2300070: block_default_23 2
+    2300072: block_default_24
+    2300074: block_default_24 1
+    2300076: block_default_25
+    2300078: block_default_25 1
+    2300080: block_default_26
+    2300082: block_default_26 1
+    2300084: block_default_27
+    2300086: block_default_27 1
+    2300088: block_default_28
+    2300090: block_default_29
+    2300092: block_default_3
+    2300094: block_default_3 1
+    2300096: block_default_30
+    2300098: block_default_32
+    2300100: block_default_33
+    2300102: block_default_33 1
+    2300104: block_default_34
+    2300106: block_default_34 1
+    2300108: block_default_35
+    2300110: block_default_35 1
+    2300112: block_default_35 2
+    2300114: block_default_36
+    2300116: block_default_36 1
+    2300118: block_default_37
+    2300120: block_default_38
+    2300122: block_default_39
+    2300124: block_default_4
+    2300126: block_default_4 1
+    2300128: block_default_40
+    2300130: block_default_41
+    2300132: block_default_42
+    2300134: block_default_43
+    2300136: block_default_44
+    2300138: block_default_45
+    2300140: block_default_46
+    2300142: block_default_48
+    2300144: block_default_49
+    2300146: block_default_5
+    2300148: block_default_5 1
+    2300150: block_default_5 2
+    2300152: block_default_5 3
+    2300154: block_default_50
+    2300156: block_default_51
+    2300158: block_default_52
+    2300160: block_default_53
+    2300162: block_default_55
+    2300164: block_default_56
+    2300166: block_default_57
+    2300168: block_default_59
+    2300170: block_default_6
+    2300172: block_default_6 1
+    2300174: block_default_6 2
+    2300176: block_default_60
+    2300178: block_default_61
+    2300180: block_default_62
+    2300182: block_default_63
+    2300184: block_default_64
+    2300186: block_default_66
+    2300188: block_default_67
+    2300190: block_default_68
+    2300192: block_default_69
+    2300194: block_default_7
+    2300196: block_default_7 1
+    2300198: block_default_70
+    2300200: block_default_71
+    2300202: block_default_72
+    2300204: block_default_8
+    2300206: block_default_8 1
+    2300208: block_default_8 2
+    2300210: block_default_9
+    2300212: block_default_9 1
+    2300214: block_rounded_29
+    2300216: block_rounded_30
+    2300218: block_rounded_31
+    2300220: cylinder_full_10
+    2300222: cylinder_full_13
+    2300224: cylinder_full_14
+    2300226: cylinder_full_15
+    2300228: cylinder_full_16
+    2300230: cylinder_full_18
+    2300232: cylinder_full_19
+    2300234: cylinder_full_21
+    2300236: cylinder_full_38
+    2300238: cylinder_full_39
+    2300240: cylinder_full_6
+    2300242: cylinder_full_7
+    2300244: door_gate_0
+    2300246: door_gate_1
+    2300248: door_gate_1 1
+    2300250: door_gate_11
+    2300252: door_gate_18
+    2300254: door_gate_2
+    2300256: door_gate_2 1
+    2300258: door_gate_24
+    2300260: door_gate_25
+    2300262: door_gate_26
+    2300264: door_gate_27
+    2300266: door_gate_28
+    2300268: door_gate_29
+    2300270: door_gate_3
+    2300272: door_gate_3 1
+    2300274: door_gate_30
+    2300276: door_gate_31
+    2300278: door_gate_32
+    2300280: door_gate_4
+    2300282: door_gate_4 1
+    2300284: door_gate_7
+    2300286: door_gate_8
+    2300288: door_gate_9
+    3300000: block_default_0
+    3300002: block_default_0 1
+    3300004: block_default_10
+    3300006: block_default_10 1
+    3300008: block_default_11
+    3300010: block_default_11 1
+    3300012: block_default_11 2
+    3300014: block_default_12
+    3300016: block_default_12 1
+    3300018: block_default_12 2
+    3300020: block_default_13
+    3300022: block_default_13 1
+    3300024: block_default_14
+    3300026: block_default_14 1
+    3300028: block_default_15
+    3300030: block_default_15 1
+    3300032: block_default_16
+    3300034: block_default_16 1
+    3300036: block_default_16 2
+    3300038: block_default_17
+    3300040: block_default_17 1
+    3300042: block_default_17 2
+    3300044: block_default_18
+    3300046: block_default_19
+    3300048: block_default_19 1
+    3300050: block_default_2
+    3300052: block_default_2 1
+    3300054: block_default_20
+    3300056: block_default_20 1
+    3300058: block_default_21
+    3300060: block_default_21 1
+    3300062: block_default_22
+    3300064: block_default_22 1
+    3300066: block_default_23
+    3300068: block_default_23 1
+    3300070: block_default_23 2
+    3300072: block_default_24
+    3300074: block_default_24 1
+    3300076: block_default_25
+    3300078: block_default_25 1
+    3300080: block_default_26
+    3300082: block_default_26 1
+    3300084: block_default_27
+    3300086: block_default_27 1
+    3300088: block_default_28
+    3300090: block_default_29
+    3300092: block_default_3
+    3300094: block_default_3 1
+    3300096: block_default_30
+    3300098: block_default_32
+    3300100: block_default_33
+    3300102: block_default_33 1
+    3300104: block_default_34
+    3300106: block_default_34 1
+    3300108: block_default_35
+    3300110: block_default_35 1
+    3300112: block_default_35 2
+    3300114: block_default_36
+    3300116: block_default_36 1
+    3300118: block_default_37
+    3300120: block_default_38
+    3300122: block_default_39
+    3300124: block_default_4
+    3300126: block_default_4 1
+    3300128: block_default_40
+    3300130: block_default_41
+    3300132: block_default_42
+    3300134: block_default_43
+    3300136: block_default_44
+    3300138: block_default_45
+    3300140: block_default_46
+    3300142: block_default_48
+    3300144: block_default_49
+    3300146: block_default_5
+    3300148: block_default_5 1
+    3300150: block_default_5 2
+    3300152: block_default_5 3
+    3300154: block_default_50
+    3300156: block_default_51
+    3300158: block_default_52
+    3300160: block_default_53
+    3300162: block_default_55
+    3300164: block_default_56
+    3300166: block_default_57
+    3300168: block_default_59
+    3300170: block_default_6
+    3300172: block_default_6 1
+    3300174: block_default_6 2
+    3300176: block_default_60
+    3300178: block_default_61
+    3300180: block_default_62
+    3300182: block_default_63
+    3300184: block_default_64
+    3300186: block_default_66
+    3300188: block_default_67
+    3300190: block_default_68
+    3300192: block_default_69
+    3300194: block_default_7
+    3300196: block_default_7 1
+    3300198: block_default_70
+    3300200: block_default_71
+    3300202: block_default_72
+    3300204: block_default_8
+    3300206: block_default_8 1
+    3300208: block_default_8 2
+    3300210: block_default_9
+    3300212: block_default_9 1
+    3300214: block_rounded_29
+    3300216: block_rounded_30
+    3300218: block_rounded_31
+    3300220: cylinder_full_10
+    3300222: cylinder_full_13
+    3300224: cylinder_full_14
+    3300226: cylinder_full_15
+    3300228: cylinder_full_16
+    3300230: cylinder_full_18
+    3300232: cylinder_full_19
+    3300234: cylinder_full_21
+    3300236: cylinder_full_38
+    3300238: cylinder_full_39
+    3300240: cylinder_full_6
+    3300242: cylinder_full_7
+    3300244: door_gate_0
+    3300246: door_gate_1
+    3300248: door_gate_1 1
+    3300250: door_gate_11
+    3300252: door_gate_18
+    3300254: door_gate_2
+    3300256: door_gate_2 1
+    3300258: door_gate_24
+    3300260: door_gate_25
+    3300262: door_gate_26
+    3300264: door_gate_27
+    3300266: door_gate_28
+    3300268: door_gate_29
+    3300270: door_gate_3
+    3300272: door_gate_3 1
+    3300274: door_gate_30
+    3300276: door_gate_31
+    3300278: door_gate_32
+    3300280: door_gate_4
+    3300282: door_gate_4 1
+    3300284: door_gate_7
+    3300286: door_gate_8
+    3300288: door_gate_9
+    4300000: block_default_0
+    4300002: block_default_5
+    4300004: cylinder_full_6
+    4300006: cylinder_full_7
+    4300008: block_default_8
+    4300010: cylinder_full_10
+    4300012: block_default_11
+    4300014: block_default_16
+    4300016: block_default_17
+    4300018: block_default_19
+    4300020: cylinder_full_21
+    4300022: block_default_23
+    4300024: block_default_24
+    4300026: block_default_25
+    4300028: block_default_26
+    4300030: block_default_27
+    4300032: block_default_29
+    4300034: block_default_30
+    4300036: block_default_2
+    4300038: block_default_3
+    4300040: block_default_4
+    4300042: block_default_5
+    4300044: block_default_6
+    4300046: block_default_7
+    4300048: block_default_8
+    4300050: block_default_9
+    4300052: block_default_10
+    4300054: block_default_11
+    4300056: block_default_12
+    4300058: cylinder_full_13
+    4300060: cylinder_full_14
+    4300062: block_default_15
+    4300064: block_default_16
+    4300066: door_gate_18
+    4300068: block_default_35
+    4300070: block_default_36
+    4300072: door_gate_0
+    4300074: door_gate_1
+    4300076: door_gate_2
+    4300078: door_gate_3
+    4300080: door_gate_4
+    4300082: block_default_5
+    4300084: block_default_6
+    4300086: door_gate_7
+    4300088: door_gate_8
+    4300090: door_gate_9
+    4300092: door_gate_11
+    4300094: block_default_12
+    4300096: block_default_13
+    4300098: block_default_14
+    4300100: block_default_15
+    4300102: block_default_16
+    4300104: block_default_17
+    4300106: cylinder_full_18
+    4300108: cylinder_full_19
+    4300110: block_default_20
+    4300112: block_default_21
+    4300114: block_default_22
+    4300116: block_default_23
+    4300118: block_default_24
+    4300120: block_default_25
+    4300122: block_default_26
+    4300124: block_default_27
+    4300126: block_default_28
+    4300128: block_rounded_29
+    4300130: block_rounded_30
+    4300132: block_rounded_31
+    4300134: block_default_32
+    4300136: block_default_33
+    4300138: block_default_34
+    4300140: block_default_35
+    4300142: cylinder_full_38
+    4300144: cylinder_full_39
+    4300146: block_default_40
+    4300148: block_default_41
+    4300150: block_default_42
+    4300152: block_default_43
+    4300154: block_default_44
+    4300156: block_default_45
+    4300158: block_default_46
+    4300160: block_default_48
+    4300162: block_default_49
+    4300164: block_default_50
+    4300166: block_default_51
+    4300168: block_default_52
+    4300170: block_default_53
+    4300172: block_default_55
+    4300174: block_default_56
+    4300176: block_default_57
+    4300178: block_default_59
+    4300180: block_default_60
+    4300182: block_default_61
+    4300184: block_default_62
+    4300186: block_default_63
+    4300188: block_default_64
+    4300190: block_default_66
+    4300192: block_default_67
+    4300194: block_default_68
+    4300196: block_default_69
+    4300198: block_default_70
+    4300200: block_default_71
+    4300202: block_default_72
+    4300204: door_gate_1
+    4300206: door_gate_2
+    4300208: door_gate_3
+    4300210: door_gate_4
+    4300212: block_default_5
+    4300214: block_default_0
+    4300216: block_default_2
+    4300218: block_default_3
+    4300220: block_default_4
+    4300222: block_default_6
+    4300224: block_default_7
+    4300226: block_default_8
+    4300228: block_default_9
+    4300230: block_default_10
+    4300232: block_default_11
+    4300234: block_default_12
+    4300236: block_default_13
+    4300238: block_default_14
+    4300240: cylinder_full_15
+    4300242: cylinder_full_16
+    4300244: block_default_17
+    4300246: block_default_18
+    4300248: block_default_19
+    4300250: block_default_20
+    4300252: block_default_21
+    4300254: block_default_22
+    4300256: block_default_23
+    4300258: door_gate_24
+    4300260: door_gate_25
+    4300262: door_gate_26
+    4300264: door_gate_27
+    4300266: door_gate_28
+    4300268: door_gate_29
+    4300270: door_gate_30
+    4300272: door_gate_31
+    4300274: door_gate_32
+    4300276: block_default_33
+    4300278: block_default_34
+    4300280: block_default_35
+    4300282: block_default_36
+    4300284: block_default_37
+    4300286: block_default_38
+    4300288: block_default_39
+    6400000: block_default_0
+    6400002: block_default_0 1
+    6400004: block_default_10
+    6400006: block_default_10 1
+    6400008: block_default_11
+    6400010: block_default_11 1
+    6400012: block_default_11 2
+    6400014: block_default_12
+    6400016: block_default_12 1
+    6400018: block_default_12 2
+    6400020: block_default_13
+    6400022: block_default_13 1
+    6400024: block_default_14
+    6400026: block_default_14 1
+    6400028: block_default_15
+    6400030: block_default_15 1
+    6400032: block_default_16
+    6400034: block_default_16 1
+    6400036: block_default_16 2
+    6400038: block_default_17
+    6400040: block_default_17 1
+    6400042: block_default_17 2
+    6400044: block_default_18
+    6400046: block_default_19
+    6400048: block_default_19 1
+    6400050: block_default_2
+    6400052: block_default_2 1
+    6400054: block_default_20
+    6400056: block_default_20 1
+    6400058: block_default_21
+    6400060: block_default_21 1
+    6400062: block_default_22
+    6400064: block_default_22 1
+    6400066: block_default_23
+    6400068: block_default_23 1
+    6400070: block_default_23 2
+    6400072: block_default_24
+    6400074: block_default_24 1
+    6400076: block_default_25
+    6400078: block_default_25 1
+    6400080: block_default_26
+    6400082: block_default_26 1
+    6400084: block_default_27
+    6400086: block_default_27 1
+    6400088: block_default_28
+    6400090: block_default_29
+    6400092: block_default_3
+    6400094: block_default_3 1
+    6400096: block_default_30
+    6400098: block_default_32
+    6400100: block_default_33
+    6400102: block_default_33 1
+    6400104: block_default_34
+    6400106: block_default_34 1
+    6400108: block_default_35
+    6400110: block_default_35 1
+    6400112: block_default_35 2
+    6400114: block_default_36
+    6400116: block_default_36 1
+    6400118: block_default_37
+    6400120: block_default_38
+    6400122: block_default_39
+    6400124: block_default_4
+    6400126: block_default_4 1
+    6400128: block_default_40
+    6400130: block_default_41
+    6400132: block_default_42
+    6400134: block_default_43
+    6400136: block_default_44
+    6400138: block_default_45
+    6400140: block_default_46
+    6400142: block_default_48
+    6400144: block_default_49
+    6400146: block_default_5
+    6400148: block_default_5 1
+    6400150: block_default_5 2
+    6400152: block_default_5 3
+    6400154: block_default_50
+    6400156: block_default_51
+    6400158: block_default_52
+    6400160: block_default_53
+    6400162: block_default_55
+    6400164: block_default_56
+    6400166: block_default_57
+    6400168: block_default_59
+    6400170: block_default_6
+    6400172: block_default_6 1
+    6400174: block_default_6 2
+    6400176: block_default_60
+    6400178: block_default_61
+    6400180: block_default_62
+    6400182: block_default_63
+    6400184: block_default_64
+    6400186: block_default_66
+    6400188: block_default_67
+    6400190: block_default_68
+    6400192: block_default_69
+    6400194: block_default_7
+    6400196: block_default_7 1
+    6400198: block_default_70
+    6400200: block_default_71
+    6400202: block_default_72
+    6400204: block_default_8
+    6400206: block_default_8 1
+    6400208: block_default_8 2
+    6400210: block_default_9
+    6400212: block_default_9 1
+    6400214: block_rounded_29
+    6400216: block_rounded_30
+    6400218: block_rounded_31
+    6400220: cylinder_full_10
+    6400222: cylinder_full_13
+    6400224: cylinder_full_14
+    6400226: cylinder_full_15
+    6400228: cylinder_full_16
+    6400230: cylinder_full_18
+    6400232: cylinder_full_19
+    6400234: cylinder_full_21
+    6400236: cylinder_full_38
+    6400238: cylinder_full_39
+    6400240: cylinder_full_6
+    6400242: cylinder_full_7
+    6400244: door_gate_0
+    6400246: door_gate_1
+    6400248: door_gate_1 1
+    6400250: door_gate_11
+    6400252: door_gate_18
+    6400254: door_gate_2
+    6400256: door_gate_2 1
+    6400258: door_gate_24
+    6400260: door_gate_25
+    6400262: door_gate_26
+    6400264: door_gate_27
+    6400266: door_gate_28
+    6400268: door_gate_29
+    6400270: door_gate_3
+    6400272: door_gate_3 1
+    6400274: door_gate_30
+    6400276: door_gate_31
+    6400278: door_gate_32
+    6400280: door_gate_4
+    6400282: door_gate_4 1
+    6400284: door_gate_7
+    6400286: door_gate_8
+    6400288: door_gate_9
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

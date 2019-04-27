@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float totalAirTime = 2f;
     [SerializeField] private float gravity = -9;
 
-    private CharacterController charController;
+    private CharacterController charController; //component to control character
 
     [SerializeField] private AnimationCurve jumpFallOff;
     [SerializeField] private float jumpMultiplier;
@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Awake()
     {
-        charController = GetComponent<CharacterController>();
+        charController = GetComponent<CharacterController>(); //initiate character controller
     }
 
     private void FixedUpdate()
@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
         PlayerMovement();
     }
 
-    private void PlayerMovement()
+    private void PlayerMovement() //main character movement
     {
         if(charController.isGrounded)
         {
