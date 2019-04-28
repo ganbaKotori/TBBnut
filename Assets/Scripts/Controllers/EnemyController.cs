@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public float lookRadius = 10f;
     Transform target;
     NavMeshAgent agent;
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,10 @@ public class EnemyController : MonoBehaviour
         if(distance <= lookRadius)
         {
             agent.SetDestination(target.position);
+            Player.GetComponent<Player>().TakeDamage(10);
         }
+
+        
     }
 
     void onDrawGizmosSelected()

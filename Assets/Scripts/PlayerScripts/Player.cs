@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -12,16 +13,27 @@ public class Player : MonoBehaviour
     }
 
     [SerializeField]
-    private int maxHealth = 100;
+    public float startHealth = 100;
+
+    private float health;
 
 
-    private int currentHealth;
+    private float currentHealth;
 
     [SerializeField]
     private Transform player;
 
     [SerializeField]
     private Transform respawnPoint;
+
+    [Header("Unity Stuff")]
+    public Image healthBar;
+
+    void Start()
+    {
+        health = startHealth;
+    }
+
 
     void Update()
     {
@@ -42,10 +54,11 @@ public class Player : MonoBehaviour
     {
         if (isDead)
             return;
-        currentHealth -= _amount;
-        Debug.Log(transform.name + " now has " + currentHealth + " health.");
+        health -= _amount;
+        Debug.Log(transform.name + " now has " + health + " health.");
+        healthBar.fillAmount = health / startHealth;
 
-        if(currentHealth <=0)
+        if(health <=0)
         {
             Die();
         }
@@ -58,7 +71,7 @@ public class Player : MonoBehaviour
         Debug.Log(transform.name + "is DEAD!");
 
         //CALL RESPAWN METHOD
-        StartCoroutine(Respawn());
+        //StartCoroutine(Respawn());
     }
 
     private IEnumerator Respawn()
@@ -72,6 +85,6 @@ public class Player : MonoBehaviour
     public void SetDefaults()
     {
         isDead = false;
-        currentHealth = maxHealth;
+        currentHealth = startHealth;
     }
 }

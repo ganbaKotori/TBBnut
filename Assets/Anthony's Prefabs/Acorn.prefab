@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8479448696156192930}
   - component: {fileID: 8479448696156192933}
   - component: {fileID: 4165718514977164940}
+  - component: {fileID: 7904730043933993600}
+  - component: {fileID: 6691437198786370973}
   m_Layer: 0
   m_Name: Acorn
   m_TagString: Acorn
@@ -109,3 +111,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7904730043933993600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479448696156192932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be82aa69f8abf74596bec1b1ab50dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 0}
+  radius: 5
+  force: 700
+--- !u!114 &6691437198786370973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479448696156192932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be82aa69f8abf74596bec1b1ab50dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 0}
+  radius: 5
+  force: 700
