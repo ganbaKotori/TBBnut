@@ -18,7 +18,7 @@ public class Explode : MonoBehaviour
     {
         if (collision.transform.tag == "Enemy")
         {
-           // Instantiate(explosionEffect, transform.position, transform.rotation);
+            Instantiate(explosionEffect, transform.position, transform.rotation);
             Collider[] colliders =  Physics.OverlapSphere(transform.position,radius);
 
             foreach(Collider nearbyObject in colliders)
@@ -32,6 +32,7 @@ public class Explode : MonoBehaviour
             Destroy(gameObject);
 
             gameObject.SetActive(false);
+            
         }
     }
 
