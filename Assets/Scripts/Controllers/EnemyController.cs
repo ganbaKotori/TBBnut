@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
             {
                 StartCoroutine(Shoot());
                 timer = 0;
-            }
+            }   
 
 
 
@@ -60,7 +60,8 @@ public class EnemyController : MonoBehaviour
         Rigidbody rocketInstance;
         rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
         rocketInstance.AddForce(barrelEnd.forward * 5000);
-        Player.GetComponent<Player>().TakeDamage(10);
+        //Player.GetComponent<Player>().TakeDamage(10);
+       
         yield return new WaitForSeconds(2);
     }
 
