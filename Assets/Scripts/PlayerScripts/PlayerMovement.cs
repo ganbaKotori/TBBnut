@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //Monitors what the player is currently doing
-    public enum State { idle, moving, aiming, climbing, airborne};
+    public enum State { idle, moving, aiming, climbing, airborne };
     public State currentState;
+    public EnvironmentInteractions ei;
 
     //basic movement fields
     public float minimumSpeed;
@@ -57,7 +58,12 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(transform.position - new Vector3(0, 1.2f, 0), 0.15f, LayerMask.GetMask("Floor"));
-
+        canClimb = false;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (ei.askPolitelyForAcorn("Please"))
+                acornCount++;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -67,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetState()
     {
-        if((isGrounded || currentState.Equals(State.climbing)) && Input.GetKeyDown(KeyCode.Space))
+        if ((isGrounded || currentState.Equals(State.climbing)) && Input.GetKeyDown(KeyCode.Space))
         {
             currentState = State.airborne;
             jumpTimer = 0;
@@ -98,17 +104,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move()
     {
-        
+
         switch (currentState)
         {
-               //If the player has no movement keys down and is on the ground, it will stop
+            //If the player has no movement keys down and is on the ground, it will stop
             case State.idle:
                 pp.velocity = new Vector3(0, 0);
                 if (Input.GetMouseButton(0))
-                    Shoot(- fpsCam.transform.forward * 0.35f * shootSpeed);
+                    Shoot(-fpsCam.transform.forward * 0.35f * shootSpeed);
                 break;
 
-                //Moves the player with the given inputs
+            //Moves the player with the given inputs
             case State.moving:
                 pp.velocity = pp.playerInputs * moveSpeed * encumbrance.Evaluate(acornCount);
                 charController.Move(pp.velocity * Time.deltaTime);
@@ -116,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
                     Shoot(pp.velocity * 0.5f - fpsCam.transform.forward * 0.45f * shootSpeed);
                 break;
 
-                //Slows the player and lets them shoot
+            //Slows the player and lets them shoot
             case State.aiming:
                 pp.velocity = pp.playerInputs * moveSpeed * 0.3f * encumbrance.Evaluate(acornCount);
                 charController.Move(pp.velocity * Time.deltaTime);
@@ -124,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
                     Shoot();
                 break;
 
-                //When the player is jumping and/or in the air
+            //When the player is jumping and/or in the air
             case State.airborne:
                 //pp.velocity = pp.velocity + new Vector3(0, 5, 0);
                 //Debug.Log("Y: " + pp.velocity.y);
@@ -135,22 +141,22 @@ public class PlayerMovement : MonoBehaviour
                     if (jumpTimer <= maxJumpTime)
                     {
                         yVelocity = (jumpVelocity.Evaluate(jumpTimer) + jumpVelocity.Evaluate(newTime)) / 2 * encumbrance.Evaluate(acornCount);
-                        Debug.Log("Timer: " + jumpTimer + "    Velovity: " + yVelocity);
+                        //Debug.Log("Timer: " + jumpTimer + "    Velovity: " + yVelocity);
                         //terminalVelocity = yVelocity;
                     }
+                    else terminalVelocity = -4f;
                     if (jumpTimer == 0)
                         yVelocity *= 3.5f;
-                    else terminalVelocity = -4f;
                     //else yVelocity -= 3.2f * Time.deltaTime;
                 }
                 //else
-                    yVelocity = Mathf.Max(yVelocity - 9.6f * Time.deltaTime, terminalVelocity);
+                yVelocity = Mathf.Max(yVelocity - 9.6f * Time.deltaTime, terminalVelocity);
 
                 pp.velocity = pp.playerInputs * moveSpeed * encumbrance.Evaluate(acornCount) + new Vector3(0, yVelocity, 0); // * 0.5f;
                 //pp.velocity.x += (1f - normalForce.y) * normalForce.x * 10;
                 //pp.velocity.z += (1f - normalForce.y) * normalForce.z * 10;
                 charController.Move(pp.velocity * Time.deltaTime);
-                Debug.Log("I'm falling!    downwards velocity: " + pp.velocity);
+                //Debug.Log("I'm falling!    downwards velocity: " + pp.velocity);
                 jumpTimer = newTime;
 
                 if (Input.GetMouseButton(0))
@@ -192,7 +198,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void StartJump()
     {
-        
+
     }
 
 

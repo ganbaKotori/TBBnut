@@ -13,6 +13,7 @@ TagManager:
   - Floor
   - Acorn
   - FloorCheck
+  - Tree
   layers:
   - Default
   - TransparentFX

@@ -320,9 +320,9 @@ GameObject:
   - component: {fileID: 1221883928}
   - component: {fileID: 1221883930}
   - component: {fileID: 1221883932}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: acornBullet
-  m_TagString: Untagged
+  m_TagString: Acorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,8 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be82aa69f8abf74596bec1b1ab50dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e,
-    type: 3}
   radius: 5
   force: 700
 --- !u!135 &1221883932
