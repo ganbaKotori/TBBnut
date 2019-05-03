@@ -292,9 +292,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/Software/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="PackageManagerAssembly">
-      <HintPath>C:/Users/Alex/Documents/gitHub/TBBnut/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Alex/Documents/gitHub/TBBnut/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
