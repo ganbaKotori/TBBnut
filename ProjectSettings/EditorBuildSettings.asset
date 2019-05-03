@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CornerMarket.unity
     guid: 069bce0c2eaab6544a2a67d19b1f0d2f
+  - enabled: 1
+    path: Assets/Scenes/VideoIntro.unity
+    guid: af2ef88a944e77549ac30c52883a0956
   m_configObjects: {}

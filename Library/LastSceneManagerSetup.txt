@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CornerMarket.unity
+- path: Assets/Scenes/VideoIntro.unity
   isLoaded: 1
   isActive: 1
