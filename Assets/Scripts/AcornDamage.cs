@@ -5,13 +5,14 @@ using UnityEngine;
 public class AcornDamage : MonoBehaviour
 {
     bool hasExploded = false;
+    private AudioManager audioManager;
     //public GameObject explosionEffect;
     public float radius = 5f;
     public float force = 700f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioManager = AudioManager.instance;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -23,15 +24,23 @@ public class AcornDamage : MonoBehaviour
 
             foreach(Collider nearbyObject in colliders)
             {
-                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.AddExplosionForce(force, transform.position,radius);
-                }
-            }
-            Destroy(gameObject);
 
-            gameObject.SetActive(false);
+                if (nearbyObject.gameObject.name == "Giraffe")
+                {
+
+                    
+                    Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+                    if (rb != null)
+                    {
+                        rb.AddExplosionForce(force, transform.position, radius);
+                        collision.gameObject.GetComponent<EnemyController>().TakeDamage(100);
+                    }
+
+
+                }
+                
+            }
+            
             
         }
     }

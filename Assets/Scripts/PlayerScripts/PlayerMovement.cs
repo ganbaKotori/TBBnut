@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -38,11 +39,15 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController charController;
     //private Rigidbody rb;
 
+    //UI Text to display how many acorns you have
+    public Text acornAmmoCount;
+
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
         //rb = GetComponent<Rigidbody>();
         pp = GetComponent<PlayerPhysics>();
+        acornAmmoCount.text = acornCount + "";
 
     }
 
@@ -53,7 +58,9 @@ public class PlayerMovement : MonoBehaviour
         //isGrounded = Physics.CheckCapsule()
         SetState();
         Move();
+        acornAmmoCount.text = acornCount + "";
     }
+
 
     private void FixedUpdate()
     {

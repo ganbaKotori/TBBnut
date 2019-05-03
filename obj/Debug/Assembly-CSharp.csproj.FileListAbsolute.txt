@@ -284,3 +284,7 @@ E:\UnityRepos\TBBnut\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 E:\UnityRepos\TBBnut\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\UnityRepos\TBBnut\obj\Debug\Assembly-CSharp.dll
 E:\UnityRepos\TBBnut\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Alex\Documents\gitHub\TBBnut\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\gitHub\TBBnut\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\gitHub\TBBnut\obj\Debug\Assembly-CSharp.dll
+C:\Users\Alex\Documents\gitHub\TBBnut\obj\Debug\Assembly-CSharp.pdb

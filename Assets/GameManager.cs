@@ -44,7 +44,21 @@ public class GameManager : MonoBehaviour
         Nacquired = N.GetComponent<ObtainLetter>().isTaken;
         if (Aacquired && Cacquired && Oacquired && Racquired && Nacquired)
         {
+            
             SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            DeleteAll();
+
+
+        }
+    }
+
+    public void DeleteAll()
+    {
+        foreach (GameObject o in Object.FindObjectsOfType<GameObject>())
+        {
+            Destroy(o);
         }
     }
 

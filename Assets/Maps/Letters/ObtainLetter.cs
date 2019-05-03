@@ -15,9 +15,13 @@ public class ObtainLetter : MonoBehaviour
     {
        
         {
+
+            if (collision.gameObject.name == "SquirrelPlayer")
+            {
+                isTaken = true;
+                gameObject.SetActive(false);
+            }
             
-            isTaken = true;
-            gameObject.SetActive(false);
 
         }
     }

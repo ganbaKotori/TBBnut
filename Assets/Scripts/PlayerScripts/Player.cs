@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -69,6 +70,12 @@ public class Player : MonoBehaviour
         isDead = true;
 
         Debug.Log(transform.name + "is DEAD!");
+        SceneManager.LoadScene(0);
+
+        SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        DeleteAll();
 
         //CALL RESPAWN METHOD
         //StartCoroutine(Respawn());
@@ -86,5 +93,13 @@ public class Player : MonoBehaviour
     {
         isDead = false;
         currentHealth = startHealth;
+    }
+
+    public void DeleteAll()
+    {
+        foreach (GameObject o in Object.FindObjectsOfType<GameObject>())
+        {
+            Destroy(o);
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Missile : MonoBehaviour
 {
     bool hasExploded = false;
-    public GameObject explosionEffect;
+    //public GameObject explosionEffect;
     public float radius = 5f;
     public float force = 700f;
     // Start is called before the first frame update
@@ -14,24 +14,19 @@ public class Missile : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.transform.tag == "Enemy")
+        if (collision.gameObject.name == "SquirrelPlayer")
         {
-            Instantiate(explosionEffect, transform.position, transform.rotation);
-            Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
-            foreach (Collider nearbyObject in colliders)
-            {
-                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.AddExplosionForce(force, transform.position, radius);
-                }
-            }
-            Destroy(gameObject);
+            collision.gameObject.GetComponent<Player>().TakeDamage(10);
+            
+            //Instantiate(explosionEffect, transform.position, transform.rotation);
+           
+            //Destroy(gameObject);
 
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
 
         }
     }

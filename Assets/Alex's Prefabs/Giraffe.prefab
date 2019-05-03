@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7079471628691566372}
   - component: {fileID: 3770067291233783652}
   - component: {fileID: 1281075533215785659}
-  - component: {fileID: 5543584044545726087}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -79,19 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5543584044545726087
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4634124622520115718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4973040776444956468
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,11 +89,11 @@ GameObject:
   - component: {fileID: 4973040776444956461}
   - component: {fileID: 4973040776444956466}
   - component: {fileID: 4973040776444956467}
-  - component: {fileID: 4973040776444956471}
   - component: {fileID: 4973040776444956464}
   - component: {fileID: 4973040776444956465}
   - component: {fileID: 4973040776444956470}
   - component: {fileID: 4973040776444956460}
+  - component: {fileID: 410030094}
   m_Layer: 0
   m_Name: Giraffe
   m_TagString: Enemy
@@ -148,7 +134,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -175,27 +161,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &4973040776444956471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973040776444956468}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a2bf6c457050044b19bb9415738c21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 40
-  Player: {fileID: 0}
-  AttackDistance: 10
-  FollowDistance: 20
-  AttackProbability: 0.5
-  HitAccuracy: 0.5
-  DamagePoints: 4.22
-  acorn: {fileID: 0}
-  patrolPoints: []
 --- !u!65 &4973040776444956464
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,8 +211,10 @@ MonoBehaviour:
   lookRadius: 10
   shootTimer: 5
   Player: {fileID: 0}
-  rocketPrefab: {fileID: 1221883928, guid: 69207b6deff1f7041b1f4b68f0c5ca67, type: 3}
+  rocketPrefab: {fileID: 0}
   barrelEnd: {fileID: 4973040776883444654}
+  isDead: 0
+  startHealth: 100
 --- !u!54 &4973040776444956460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -264,6 +231,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &410030094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4973040776444956468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31e650f9eb159a41b36a0a4ac428e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  force: 650
 --- !u!1 &4973040776883444655
 GameObject:
   m_ObjectHideFlags: 0

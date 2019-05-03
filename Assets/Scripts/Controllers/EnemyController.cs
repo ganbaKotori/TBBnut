@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    public float lookRadius = 10f;
+    public float lookRadius = 30f;
     public float shootTimer = 5f;
     Transform target;
     NavMeshAgent agent;
@@ -14,7 +14,18 @@ public class EnemyController : MonoBehaviour
     public Transform barrelEnd;
     float timer;
 
-  
+    private bool _isDead = false;
+    public bool isDead;
+
+    [SerializeField]
+    public float startHealth = 100;
+
+    private float health;
+
+
+    private float currentHealth;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +33,12 @@ public class EnemyController : MonoBehaviour
         target = PlayerManager.instance.gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
         timer = 0;
+        health = startHealth;
+    }
+
+    public void Setup()
+    {
+        SetDefaults();
     }
 
     // Update is called once per frame
@@ -54,6 +71,27 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+    public void TakeDamage(int _amount)
+    {
+        if (isDead)
+            return;
+        health -= _amount;
+        
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        isDead = true;
+
+        Destroy(gameObject);
+
+    }
+
 
     IEnumerator Shoot()
     {
@@ -63,6 +101,12 @@ public class EnemyController : MonoBehaviour
         //Player.GetComponent<Player>().TakeDamage(10);
        
         yield return new WaitForSeconds(2);
+    }
+
+    public void SetDefaults()
+    {
+        isDead = false;
+        currentHealth = startHealth;
     }
 
 }
