@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &45895005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 994d3c287e362764d95b6e57c8a08818,
@@ -433,7 +432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1001 &139832836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -956,24 +954,59 @@ PrefabInstance:
       propertyPath: gravity
       value: -10.26
       objectReference: {fileID: 0}
+    - target: {fileID: 2957932856504749205, guid: 347e63172f93d4148a3f619ab719e8cb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
       propertyPath: maxJumpTime
-      value: 0.21
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
       propertyPath: moveSpeed
-      value: 3.45
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
       propertyPath: acorn
       value: 
       objectReference: {fileID: 1221883927, guid: 69207b6deff1f7041b1f4b68f0c5ca67,
         type: 3}
+    - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
+      propertyPath: jumpVelocity.m_Curve.Array.data[1].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
+      propertyPath: jumpVelocity.m_Curve.Array.data[2].inSlope
+      value: 5.3402867
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
+      propertyPath: jumpVelocity.m_Curve.Array.data[2].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
+      propertyPath: jumpVelocity.m_Curve.Array.data[0].value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
+      propertyPath: ei
+      value: 
+      objectReference: {fileID: 2005598479}
     - target: {fileID: 2957932856504749224, guid: 347e63172f93d4148a3f619ab719e8cb,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2957932856779157737, guid: 347e63172f93d4148a3f619ab719e8cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609890729779426861, guid: 347e63172f93d4148a3f619ab719e8cb,
+        type: 3}
+      propertyPath: pm
+      value: 
+      objectReference: {fileID: 1259060506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 347e63172f93d4148a3f619ab719e8cb, type: 3}
 --- !u!1 &386596803 stripped
@@ -1014,7 +1047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &425308553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1114,10 @@ PrefabInstance:
     - target: {fileID: 191266, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_Name
       value: Oak_Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191266, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1388,7 +1424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1001 &503619180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1532,6 +1567,10 @@ PrefabInstance:
     - target: {fileID: 191266, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_Name
       value: Oak_Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 191266, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1832,7 +1871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &840558779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: bffec275531eac947b1652f74d401c9f,
@@ -2123,6 +2161,10 @@ PrefabInstance:
     - target: {fileID: 137650, guid: 826b6a0b570e8460990010fa615b5a2a, type: 3}
       propertyPath: m_Name
       value: Poplar_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 137650, guid: 826b6a0b570e8460990010fa615b5a2a, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 413218, guid: 826b6a0b570e8460990010fa615b5a2a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2680,6 +2722,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 376134098}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259060506 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1598852579, guid: 347e63172f93d4148a3f619ab719e8cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 376134098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259060504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806670ae9ad0ac34d841710d946fb81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1284309667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 624616145, guid: bbcde5f0cbcaa1a4eb838411522da491,
@@ -2704,7 +2758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &1405699149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 191266, guid: c44bd9bdc114d4a60932c0087d9d1732,
@@ -2749,7 +2802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1001 &1491578475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3075,6 +3127,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100124, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100126, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3115,6 +3171,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100152, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100170, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3122,6 +3182,10 @@ PrefabInstance:
     - target: {fileID: 100170, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100170, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100172, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3299,6 +3363,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3314,6 +3382,10 @@ PrefabInstance:
     - target: {fileID: 100032, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100034, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3370,6 +3442,10 @@ PrefabInstance:
     - target: {fileID: 100046, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3451,6 +3527,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100072, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3466,6 +3546,10 @@ PrefabInstance:
     - target: {fileID: 100074, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100074, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100076, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3570,6 +3654,10 @@ PrefabInstance:
     - target: {fileID: 100104, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100104, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100106, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3747,6 +3835,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100160, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100162, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3778,6 +3870,10 @@ PrefabInstance:
     - target: {fileID: 100168, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100168, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100176, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -3811,6 +3907,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100182, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
+      objectReference: {fileID: 0}
     - target: {fileID: 100184, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -3818,6 +3918,10 @@ PrefabInstance:
     - target: {fileID: 100184, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100184, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 100186, guid: 7219f8786c175054d9f40b1591cdbba6, type: 3}
       propertyPath: m_Layer
@@ -4921,16 +5025,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 425308554}
     m_Modifications:
-    - target: {fileID: 1516687459585168073, guid: 583da98a297d0aa4b8a7757198caa356,
-        type: 3}
-      propertyPath: m_Name
-      value: Directional Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 1516687459585168073, guid: 583da98a297d0aa4b8a7757198caa356,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1516687459585168075, guid: 583da98a297d0aa4b8a7757198caa356,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4985,6 +5079,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -52.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516687459585168073, guid: 583da98a297d0aa4b8a7757198caa356,
+        type: 3}
+      propertyPath: m_Name
+      value: Directional Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516687459585168073, guid: 583da98a297d0aa4b8a7757198caa356,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1516687459585168074, guid: 583da98a297d0aa4b8a7757198caa356,
         type: 3}
@@ -5287,7 +5391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &1974214297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5399,7 +5502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!4 &1979380008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739,
@@ -5475,6 +5577,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c39d168e57851a54d9f32df0ae7e3f03, type: 3}
+--- !u!114 &2005598479 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4609890729779426861, guid: 347e63172f93d4148a3f619ab719e8cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 376134098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c91f793cba8ebe4aa06348d2f7aed8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2007593746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5485,6 +5599,10 @@ PrefabInstance:
     - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_Name
       value: Palm_Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+      propertyPath: m_TagString
+      value: Climbable
       objectReference: {fileID: 0}
     - target: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5601,7 +5719,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 830a51404c65787438fdab4444701b3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 993d1de0f6b1cd8438692dbfe1c2d4d3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5778,7 +5896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fa698560b688845bf08bafe6dc1b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AdditionalVertexStreamMesh: {fileID: 0}
 --- !u!1 &2112195806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2377724993205213632, guid: 29ab39d8d07023d4481f6bebe2ccb7a4,
